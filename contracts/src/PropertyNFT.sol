@@ -8,7 +8,6 @@ contract PropertyNFT is ERC721URIStorage, Ownable {
     uint256 public nextTokenId;
 
     constructor() ERC721("Willow", "WLW") Ownable(msg.sender) {
-        nextTokenId = 0;
     }
 
     function mintProperty(
